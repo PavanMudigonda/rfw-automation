@@ -1,7 +1,16 @@
 # Starter pipeline
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
+# - task: UsePythonVersion@0
+  inputs:
+    versionSpec: '3.9.5'
+    addToPath: true
+    architecture: 'x64'
+- task: PythonScript@0
+  inputs:
+    scriptSource: 'inline'
+    script: 'python -m pip install --upgrade pip'
+    script: 'pip install -r requirements.txt'
 
 trigger:
 - master
@@ -10,10 +19,7 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+- script: python -m robot tests/
+  displayName: 'Run Robot Framework'
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+
