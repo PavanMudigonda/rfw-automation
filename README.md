@@ -99,5 +99,27 @@ This is automated web testing for any web application. Its using page object mod
 See general [guidelines](https://github.com/robotframework/HowToWriteGoodTestCases/blob/master/HowToWriteGoodTestCases.rst) for good or standarization test cases from robot framework
 
 
+---------------------------
+DEVOPS Tools Support:-
+
+Robocorp RPA:-
+
+Conda.yaml
+robot.yaml
+
+Docker:-
+Dockerfile
+
+Jenkins:-
+Jenkinsfile
+
+Kubernetes:-
+k8-config-file.yaml
+
+Github Actions:-
+.github/workflow
+
+Azure Pipeline:-
+azure-pipeline.yaml
 
 
