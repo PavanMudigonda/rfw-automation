@@ -1,5 +1,5 @@
 *** Settings ***
-Resource          ../resources/resources.robot
+Resource          ../resources/common/resources.robot
 Resource          ../resources/pages/login_pages.robot
 Resource          ../resources/pages/home_pages.robot
 Resource          ../resources/steps/login_steps.robot
