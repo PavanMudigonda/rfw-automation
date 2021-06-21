@@ -7,5 +7,4 @@ Input Username And Password
   Input Username                              ${username}
   Login Button Should Be Enabled
   Input Pass                                  ${password}
-  Show Password Button Should Be Visible
   Click Login Button

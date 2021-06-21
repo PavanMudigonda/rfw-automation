@@ -3,11 +3,10 @@ Library       SeleniumLibrary
 
 
 *** Variables ***
-${USERNAME_FIELD}             //input[@name='username']
-${PASSWORD_FIELD}             //input[@name='password']
-${LOGIN_BUTTON}               //button[@type='submit'][text()='Log in']
-${SHOWPASSWORD_BUTTON}        //button[@type='button'][text()='Show']
-${ERROR_MESSAGE}              //p[@id='slfErrorAlert']
+${USERNAME_FIELD}             //*[@id="user-name"]
+${PASSWORD_FIELD}             //*[@id="password"]
+${LOGIN_BUTTON}               //*[@id="login-button"]
+${ERROR_MESSAGE}              //*[@id="login_button_container"]/div/form/div[3]
 
 *** Keywords ***
 Login Page Opened
@@ -30,9 +29,6 @@ Input Pass
   Wait Until Element Is Enabled     ${PASSWORD_FIELD}
   Input Text                        ${PASSWORD_FIELD}       ${password}
 
-Show Password Button Should Be Visible
-  Wait Until Element Is Visible     ${SHOWPASSWORD_BUTTON}
-  Element Should Be Visible         ${SHOWPASSWORD_BUTTON}
 
 Click Login Button
   Wait Until Element Is Enabled     ${LOGIN_BUTTON}

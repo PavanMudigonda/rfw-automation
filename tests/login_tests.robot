@@ -1,15 +1,15 @@
 *** Settings ***
 Resource          ../resources/resources.robot
-Resource          ../pages/login_pages.robot
-Resource          ../pages/home_pages.robot
-Resource          ../steps/login_steps.robot
+Resource          ../resources/pages/login_pages.robot
+Resource          ../resources/pages/home_pages.robot
+Resource          ../resources/steps/login_steps.robot
 Test Setup        Open Login Page Using Chrome Browser
 Test Teardown     Close Browser
 
 
 *** Variables ***
-${valid_username}       Yazid_Akun_Testing
-${valid_password}       YOUR_VALID_PASSWORD
+${valid_username}       standard_user
+${valid_password}       secret_sauce
 ${invalid_data}         qwerty
 
 *** Test Cases ***

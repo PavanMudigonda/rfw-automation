@@ -2,16 +2,16 @@
 Login Tests                                                                   
 ==============================================================================
 Valid Login                                                           | FAIL |
-No keyword with name 'GIVEN Login Page Opened' found.
+No keyword with name 'Show Password Button Should Be Visible' found.
 ------------------------------------------------------------------------------
 Invalid Login                                                         | FAIL |
 Several failures occurred:
 
-1) No keyword with name 'GIVEN Login Page Opened' found.
+1) No keyword with name 'Show Password Button Should Be Visible' found.
 
-2) No keyword with name 'GIVEN Login Page Opened' found.
+2) No keyword with name 'Show Password Button Should Be Visible' found.
 
-3) No keyword with name 'GIVEN Login Page Opened' found.
+3) No keyword with name 'Show Password Button Should Be Visible' found.
 ------------------------------------------------------------------------------
 Login Tests                                                           | FAIL |
 2 tests, 0 passed, 2 failed

@@ -2,9 +2,9 @@
 Library       SeleniumLibrary
 
 *** Variables ***
-${IG_LOGO}            //a[@href='/']
-${PROFILE_ICON}       //a[@href='/yazid_akun_testing/']
-${PROFILE_BUTTON}     //a[text()='Profile']
+${IG_LOGO}            //*[@id="root"]/div/div[1]
+${PROFILE_ICON}       //*[@id="root"]/div/div[2]/div[1]/div[2]
+${PROFILE_BUTTON}     //*[@id="login-button"]
 
 *** Keywords ***
 Home Page Opened

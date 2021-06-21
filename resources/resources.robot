@@ -2,8 +2,8 @@
 Library       SeleniumLibrary
 
 *** Variables ***
-${MAIN_PAGE}      https://www.instagram.com
-${LOGIN_PAGE}     ${MAIN_PAGE}/accounts/login/
+${MAIN_PAGE}      https://www.saucedemo.com/
+${LOGIN_PAGE}     ${MAIN_PAGE}
 
 *** Keywords ***
 Open Main Page Using Chrome Browser
