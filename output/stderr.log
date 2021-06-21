@@ -1,0 +1,21 @@
+[ ERROR ] Error in file '/Users/pavanmudigonda/Documents/GitHub/RFW-Automation/resources/common/resources.robot' on line 88: Non-existing setting ''.
+[ ERROR ] Error in file '/Users/pavanmudigonda/Documents/GitHub/RFW-Automation/resources/common/resources.robot' on line 8: Importing library 'ExcelRobot' failed: ModuleNotFoundError: No module named 'ExcelRobot'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /Users/pavanmudigonda/Documents/GitHub/RFW-Automation
+  /Users/pavanmudigonda/Documents/GitHub/RFW-Automation
+  /Users/pavanmudigonda/.robocorp/live/199e494e4c733ef3/lib/python37.zip
+  /Users/pavanmudigonda/.robocorp/live/199e494e4c733ef3/lib/python3.7
+  /Users/pavanmudigonda/.robocorp/live/199e494e4c733ef3/lib/python3.7/lib-dynload
+  /Users/pavanmudigonda/.robocorp/live/199e494e4c733ef3/lib/python3.7/site-packages
+[ ERROR ] Error in file '/Users/pavanmudigonda/Documents/GitHub/RFW-Automation/resources/common/resources.robot' on line 9: Importing library 'REST' failed: ModuleNotFoundError: No module named 'REST'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /Users/pavanmudigonda/Documents/GitHub/RFW-Automation
+  /Users/pavanmudigonda/Documents/GitHub/RFW-Automation
+  /Users/pavanmudigonda/.robocorp/live/199e494e4c733ef3/lib/python37.zip
+  /Users/pavanmudigonda/.robocorp/live/199e494e4c733ef3/lib/python3.7
+  /Users/pavanmudigonda/.robocorp/live/199e494e4c733ef3/lib/python3.7/lib-dynload
+  /Users/pavanmudigonda/.robocorp/live/199e494e4c733ef3/lib/python3.7/site-packages

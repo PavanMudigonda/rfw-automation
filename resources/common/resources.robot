@@ -95,6 +95,17 @@ Setup REST Parameters
     ${auth}=   Get Data from Excel with given column   ${serviceName}  ${testName}   uri
     Set Global Variable   ${auth}    
 
+Get REST API response
+    [Documentation]  Get REST API response
+    Set Headers  {"authorization": "${auth}"}
+    Set userid   {"userid": "${empId}"}
+    Get   ${apiUrl}/api/v1/user-preferences/employees/${EmpId}
+    Integer   response status  200
+    ${responseBody}=   Output  response  body
+    ${tagValue}=   Output  $.tag.tag.tag
+    Set Global Variable   ${tagValue}
+
+
 
 #  DB Keywords
 
@@ -103,3 +114,9 @@ Connect to DB
     [Arguments]  ${env}
     Run Keyword If    '${env}'='dev'   Connect Pymssql   server-ip-address-goes-here    userid   password   dbname-goes-here
     Run Keyword If    '${env}'='test'  Connect Pymssql   server-ip-address-goes-here    userid   password   dbname-goes-here
+
+Run Select SQL in mySQL DB
+    Connect to DB  ${env}
+    ${sqlResults} =   Run Pymssql Query   Select *  FROM DB-NAME  WHERE .......
+
+
