@@ -2,19 +2,12 @@
 Login Tests                                                                   
 ==============================================================================
 Valid Login                                                           | FAIL |
-No keyword with name 'Show Password Button Should Be Visible' found.
+Element '//*[@id="root"]/div/div[2]/div[1]/div[2]' not visible after 5 seconds.
 ------------------------------------------------------------------------------
-Invalid Login                                                         | FAIL |
-Several failures occurred:
-
-1) No keyword with name 'Show Password Button Should Be Visible' found.
-
-2) No keyword with name 'Show Password Button Should Be Visible' found.
-
-3) No keyword with name 'Show Password Button Should Be Visible' found.
+Invalid Login                                                         | PASS |
 ------------------------------------------------------------------------------
 Login Tests                                                           | FAIL |
-2 tests, 0 passed, 2 failed
+2 tests, 1 passed, 1 failed
 ==============================================================================
 Output:  /Users/pavanmudigonda/Documents/GitHub/RFW-Automation/output/output.xml
 Log:     /Users/pavanmudigonda/Documents/GitHub/RFW-Automation/output/log.html
