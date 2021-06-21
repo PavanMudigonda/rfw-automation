@@ -29,7 +29,6 @@ steps:
     sudo apt-get install default-jdk
     sudo apt-get -y install unzip
     npm install chromedriver
-    unzip testng-6.8.7.jar.zip  
   displayName: 'Install dependencies'
 
 
