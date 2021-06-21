@@ -59,10 +59,6 @@ pycparser
 pyflakes
 Pygments
 pynput-robocorp-fork
-pyobjc-core
-pyobjc-framework-Cocoa
-pyobjc-framework-Quartz
-pyobjc-framework-WebKit
 pyparsing
 PyPDF2
 pyperclip
