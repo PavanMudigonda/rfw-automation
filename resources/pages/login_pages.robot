@@ -1,6 +1,7 @@
 *** Settings ***
 Library       SeleniumLibrary
 
+
 *** Variables ***
 ${USERNAME_FIELD}             //input[@name='username']
 ${PASSWORD_FIELD}             //input[@name='password']

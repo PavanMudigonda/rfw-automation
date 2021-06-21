@@ -1,10 +1,11 @@
 *** Settings ***
-Resource          ../resources.robot
+Resource          ../resources/resources.robot
 Resource          ../pages/login_pages.robot
 Resource          ../pages/home_pages.robot
 Resource          ../steps/login_steps.robot
 Test Setup        Open Login Page Using Chrome Browser
 Test Teardown     Close Browser
+
 
 *** Variables ***
 ${valid_username}       Yazid_Akun_Testing
