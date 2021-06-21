@@ -1,13 +1,12 @@
 ==============================================================================
 Login Tests                                                                   
 ==============================================================================
-Valid Login                                                           | FAIL |
-Element '//*[@id="root"]/div/div[2]/div[1]/div[2]' not visible after 5 seconds.
+Valid Login                                                           | PASS |
 ------------------------------------------------------------------------------
 Invalid Login                                                         | PASS |
 ------------------------------------------------------------------------------
-Login Tests                                                           | FAIL |
-2 tests, 1 passed, 1 failed
+Login Tests                                                           | PASS |
+2 tests, 2 passed, 0 failed
 ==============================================================================
 Output:  /Users/pavanmudigonda/Documents/GitHub/RFW-Automation/output/output.xml
 Log:     /Users/pavanmudigonda/Documents/GitHub/RFW-Automation/output/log.html
