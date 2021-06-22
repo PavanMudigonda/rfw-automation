@@ -29,7 +29,7 @@ steps:
 
 
 - script: |
-    python -m robot tests/login_tests.robot
+    python -m robot.exe tests/login_tests.robot
   displayName: 'Run Robot Scripts'
 
 
