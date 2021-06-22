@@ -28,7 +28,7 @@ steps:
   displayName: 'Install dependencies'
 
 
-- script: python -m  robot  tests/login_tests.robot.
+- script: python3 -m  robot  tests/login_tests.robot
   displayName: 'Run Robot Scripts'
 
 
