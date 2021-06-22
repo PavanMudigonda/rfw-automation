@@ -38,9 +38,8 @@ steps:
   displayName: 'Install dependencies'
 
 
-- script: |
-    python -m robot tests/login_tests.robot
-  displayName: 'Robot'
+- powershell: robot --pythonpath . tests/login_tests.robot
+  displayName: 'Run Robot Scripts'
 
 
 
