@@ -28,7 +28,7 @@ steps:
   displayName: 'Install dependencies'
 
 
-- powershell: robot --pythonpath . tests/login_tests.robot
+- powershell:  robot --pythonpath . -x outputxunit.xml tests/login_tests.robot.
   displayName: 'Run Robot Scripts'
 
 
