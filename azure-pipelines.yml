@@ -7,11 +7,12 @@ trigger:
 - master
 
 pool:
-  vmImage: windows-2019
+  vmImage: vs2019-win2019
 strategy:
   matrix:
-    Python39:
-      python.version: '3.9'
+    Python37:
+      python.version: '3.7'
+  maxParallel: 1
 
 steps:
 - task: UsePythonVersion@0
@@ -21,15 +22,15 @@ steps:
   displayName: 'Use Python $(python.version)'
 
 - script: |
-    pip install -r requirements.txt
-    robot --version
-    npm install chromedriver
+    pip install -r requirements.txt \
+    && robot --version \
+    && npm install chromedriver
 
   displayName: 'Install dependencies'
 
 
 - script: |
-    python -m robot.exe tests/login_tests.robot
+    python -m robot tests/login_tests.robot
   displayName: 'Run Robot Scripts'
 
 
