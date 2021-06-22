@@ -33,6 +33,7 @@ steps:
     wget -q http://chromedriver.storage.googleapis.com/$chromedriver_latest/chromedriver_linux64.zip
     sudo unzip chromedriver_linux64.zip -d /usr/local/bin
     sudo chmod +x /usr/local/bin/chromedriver
+    sudo chmod 777 /usr/local/bin/chromedriver
 
   displayName: 'Install dependencies'
 
