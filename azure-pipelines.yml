@@ -30,8 +30,8 @@ steps:
        lsof curl libgtk2.0-0 libnotify-dev libgconf-2-4  libxss1  libxtst6 xauth default-jdk
        
     chromedriver_latest=$(curl -k -sS https://chromedriver.storage.googleapis.com/LATEST_RELEASE) && \
-    wget -q http://chromedriver.storage.googleapis.com/$chromedriver_latest/chromedriver_linux64.zip && \
-    unzip chromedriver_linux64.zip -d /usr/local/bin \
+    wget -q http://chromedriver.storage.googleapis.com/$chromedriver_latest/chromedriver_linux64.zip  \
+    sudo unzip chromedriver_linux64.zip -d /usr/local/bin \
     && sudo rm chromedriver_linux64.zip
     && chmod +x /usr/local/bin/chromedriver
 
