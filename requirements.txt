@@ -1,11 +1,8 @@
 openpyxl
 robotframework
-robotframework-pythonlibcore
 robotframework-requests
 robotframework-seleniumlibrary
 robotframework-seleniumtestability
-rpaframework-core
-rpaframework-dialogs
-rpaframework-pdf
 selenium
 webdrivermanager
+robotframework-excellibrary
