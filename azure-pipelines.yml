@@ -27,7 +27,7 @@ steps:
   displayName: 'Install dependencies'
 
 
-- powershell: python3 -m robot tests/login_tests.robot
+- powershell: python -m robot tests/login_tests.robot
   displayName: 'Run Robot Scripts'
 
 
