@@ -10,8 +10,8 @@ pool:
   vmImage: windows-2019
 strategy:
   matrix:
-    Python395:
-      python.version: '3.9.5'
+    Python39:
+      python.version: '3.9'
 
 steps:
 - task: UsePythonVersion@0
@@ -21,7 +21,6 @@ steps:
   displayName: 'Use Python $(python.version)'
 
 - script: |
-    python -m pip install --upgrade pip
     pip install -r requirements.txt
     npm install chromedriver
 
