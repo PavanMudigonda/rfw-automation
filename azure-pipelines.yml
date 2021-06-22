@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: windows-2019
 strategy:
   matrix:
     Python395:
@@ -17,10 +17,10 @@ steps:
 - task: UsePythonVersion@0
   inputs:
     versionSpec: '$(python.version)'
+    architecture: 'x64'
   displayName: 'Use Python $(python.version)'
 
 - script: |
-    sudo apt install python3-pip python3-venv
     python -m pip install --upgrade pip
     pip install -r requirements.txt
     npm install chromedriver
@@ -28,7 +28,7 @@ steps:
   displayName: 'Install dependencies'
 
 
-- powershell: robot --pythonpath . tests/login_tests.robot
+- powershell: python3 -m robot tests/login_tests.robot
   displayName: 'Run Robot Scripts'
 
 
