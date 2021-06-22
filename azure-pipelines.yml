@@ -20,27 +20,19 @@ steps:
   displayName: 'Use Python $(python.version)'
 
 - script: |
-    sudo apt install python3-pip
+    sudo apt install python3-pip python3-venv
     python -m pip install --upgrade pip
-    sudo apt-get update
     pip install -r requirements.txt
-    sudo apt-get update
-    sudo apt-get install -y unzip xvfb libxi6 libgconf-2-4
-    sudo apt-get install default-jdk
-    sudo apt-get -y install unzip
     sudo apt-get update
     sudo apt-get install -y xvfb wget ca-certificates fonts-liberation libasound2 libatk-bridge2.0-0 libatk1.0-0 \
        libatspi2.0-0 libcups2 libdbus-1-3 libgbm1 libgtk-3-0 libnspr4 libnss3 \
-       libxcomposite1 libxkbcommon0 libxrandr2 xdg-utils ntpdate openssl
-    sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb \
-    && sudo dpkg -i google-chrome-stable_current_amd64.deb \
-    && rm google-chrome*.deb \
-    && wget -q https://chromedriver.storage.googleapis.com/89.0.4389.23/chromedriver_linux64.zip \
-    && unzip chromedriver_linux64.zip \
-    && rm chromedriver_linux64.zip \
-    && sudo mv chromedriver /usr/local/bin \
-    && chmod +x /usr/local/bin/chromedriver
-    
+       libxcomposite1 libxkbcommon0 libxrandr2 xdg-utils ntpdate openssl unzip libxi6 \
+       lsof curl libgtk2.0-0 libnotify-dev libgconf-2-4  libxss1  libxtst6 xauth default-jdk
+       
+    chromedriver_latest=$(curl -k -sS https://chromedriver.storage.googleapis.com/LATEST_RELEASE) && \
+    wget -0 /tmp/chromedriver.zip http://chromedriver.storage.googleapis.com/$chromedriver_latest/chromedriver_linux64.zip && \
+    unzip /tmp/chromedriver.zip chromedriver -d /usr/local/bin/
+
   displayName: 'Install dependencies'
 
 
