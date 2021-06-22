@@ -22,12 +22,14 @@ steps:
 
 - script: |
     pip install -r requirements.txt
+    robot --version
     npm install chromedriver
 
   displayName: 'Install dependencies'
 
 
-- powershell: python -m robot tests/login_tests.robot
+- script: |
+    python -m robot tests/login_tests.robot
   displayName: 'Run Robot Scripts'
 
 
